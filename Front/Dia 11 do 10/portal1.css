@@ -1,0 +1,248 @@
+
+
+#cabecalho{ 
+    width: 100%;  
+    height: 80px;
+    background: #5e9049;
+    position: fixed;
+    margin-top: -26px;
+    margin-left: -8px;
+}
+
+#cabecalho2{
+    width: 100%;
+    height: 60px;
+    margin-top: 100px;
+    background: #5e9049;
+  
+}
+
+#anteriorIntro{
+    width: 100%;
+    margin-left: -8px;
+}
+
+#introducao{  
+    padding-top: 20px;
+    width: 50%;      
+    margin-left: 400px;
+    text-align: justify;
+    color: black;
+
+}
+
+#logoIff{   
+    height: 70px;
+    width: 70px ;
+    margin-top: -80px;
+    padding-bottom: 20px;
+
+}
+
+#titulo{
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: solid;
+    color: black;   
+}
+
+#botaoForum{
+    margin-left: 100px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    background: gray;
+    display: block;
+    
+}
+
+.li{
+    list-style-type: none;
+}
+
+#botaoForum:hover{
+    padding: 10px;
+    border: 1px solid black;
+    background: rgb(196, 195, 195);
+    width: 300px;
+    cursor: pointer;
+    display: block;
+
+}
+#botaoForum:focus{
+  border: solid 4px #5e9049;
+}
+
+#forum{
+    border: 7px groove #5e9049;
+    border-radius: 8px;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 20px;
+    height: 300px;
+    width: 700px;
+    background: rgba(255, 255, 255, 0.712);   
+
+}
+
+#forum2{
+  height: 22px;
+  width: 170px;
+  margin-left: 480px;
+  border-radius: 5px;
+  position: absolute;
+  display: block; 
+
+
+}
+
+#fraseForum{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.button {
+    
+    margin-left: 1350px;
+    margin-top: 20px;
+    position: absolute;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .button2 {
+    margin-left: 1430px;
+    margin-top: 20px;
+    position: absolute;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .button2:hover {background-color: #3e8e41}
+  
+  .button2:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #button3{
+    border-radius: 3px;
+    color: blue;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.712); 
+  }
+
+  #button4{
+    margin-left: 42px;
+    position: absolute;
+    border-radius: 3px;
+    color: blue;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.712); 
+  }
+
+  #button5{
+    margin-left: 83px;
+    border-radius: 3px;
+    color: blue;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.712); 
+  }
+
+body{
+  
+  background-color: white;
+  /*background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 100%;
+  background-image: url('https://img.freepik.com/vetores-gratis/https://img.freepik.com/fotos-gratis/fundo-azul-do-gradiente-de-luxo-abstrato-liso-azul-escuro-com-vinheta-preta-studio-banner_1258-54332.jpg?w=996&t=st=1663087490~exp=1663088090~hmac=6eb9cda619fc0107426ccc759538031a15607dcd6491b324d4d9cc307a2513ac-de-neon-https://https://img.freepik.com/vetores-gratis/design-de-fundo-de-particulas-3d-azul_1017-15410.jpg?w=1380&t=st=1663087407~exp=1663088007~hmac=173fe6ccba80840b48aa9e80ee8c346a170fb04d9cebc99a19040bad1a249c27.freepik.com/vetores-gratis/design-de-banner-de-fundo-de-negocios-de-venda-abstrata-multiuso_1340-16827.jpg?w=360-em-vetor-de-modelo-de-banner-de-blog-em-azul-escuro_53876-144375.jpg?w=360');
+  */
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 300px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding-top: 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
