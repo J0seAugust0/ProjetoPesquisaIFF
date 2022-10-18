@@ -1,0 +1,75 @@
+<header?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" type="text/css" href="portal1.css">
+    <title>VSPLab</title>
+   
+</head>
+<body>
+<input value="Sim" type="text" hidden="hidden" id="LoginFeito" />-->
+     <?php
+        if(isset($_SESSION['id']) and (isset($_SESSION['nome']))){
+			echo '<input value="Sim" type="text" hidden="hidden" id="LoginFeito" />';
+			echo '<input value="'.$_SESSION['nome'].'" type="text" hidden="hidden" id="nome" />';
+        }else{
+			echo '<input value="Nao" type="text" hidden="hidden" id="LoginFeito" />';
+        }
+        ?> 
+    <header id="cabecalho"> 
+        <div id="botao1" href="cadastro.html">>			
+        </div>		
+        <div id="botao2">            
+        </div>
+        <h1 id="titulo">VSPLab</h1>
+        <div>
+            <a> <img id="logoIff" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Instituto_Federal_Fluminense_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_Fluminense_-_Marca_Vertical_2015.svg.png" alt=""></a>
+        </div>          
+    </header>
+    <br><br><br><br>
+    
+   <div class="container">
+    <br><br><br><br>
+    <div>
+        <div id="forum">           
+        <div>           
+        </div>
+        </div>
+    <ul>
+        <li class="li1"><button id="botaoForum" type="button" onclick="mostrarTopico('Topico 1 AR', 'Topico 2 AR', 1)">Artigos Relacionados</button></li>
+        <li class="li2"><button id="botaoForum" type="button" onclick="mostrarTopico('Topico 2 LR', '', 2)" >Levantamento de Requisitos</button></li>
+        <li class="li3"><button id="botaoForum" type="button" onclick="mostrarTopico('Topico 3 AR', '', 3)">Análise de Requisitos</button></li>
+        <li class="li4"><button id="botaoForum" type="button" onclick="mostrarTopico('Topico 4 I', '', 4)">Implementação</button></li>
+        <li class="li5"><button id="botaoForum" type="button" onclick="mostrarTopico('Topico 5 T', '', 5)">Teste</button></li>
+        <li class="li6"><button id="botaoForum" type="button" onclick="mostrarTopico('Topico 6 M', '', 6)">Manutenção</button></li>
+    </ul>  
+    </div>
+    <br>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" id="login-usuario-form" class="form-container">
+		<span id="msgAlertErroLogin"></span>
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="senha" id="senha" required>
+      
+          <button type="submit" id="login-usuario-btn" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <div><br><br></div>
+    </div>
+  
+    <script src="portal1.js"></script>
+</body>
+    <!--Created by Marcus Vynícius and José Augusto-->
+</html>
