@@ -67,7 +67,7 @@
 				$mail->addAddress($email, 'User');     //Add a recipient
 				
 				
-				$link = '127.0.0.1/Teste8/cadastroRealizado.php?token=';
+				$link = $_SERVER['SERVER_ADDR'].'/Teste8/cadastroRealizado.php?token=';
 				$mensagem = '<a href="'.$link.$token.'"> <b>Clique no aqui abaixo para confirmar.</b> </a>';
 				
 				//Content
