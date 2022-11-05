@@ -8,23 +8,23 @@ a{
 
 #cabecalho{ 
     width: 100%;  
-    height: 6.25rem;
+    height: 100px;
     background: rgb(112, 167, 31);  
     position: absolute;
-    margin-top: -1.625rem;
-    margin-left: 0.5rem;
+    margin-top: -26px;
+    margin-left: -8px;
 }
 
 #logoIff{   
-    height: 4.375rem;
-    width: 4.375rem;
+    height: 70px;
+    width: 70px ;
     margin-top: -4.5%;
-    padding-bottom: 1.25rem;
+    padding-bottom: 20px;
 
 }
 
 #titulo{
-    margin-top: 1.875rem;
+    margin-top: 30px;
     text-align: center;
     text-decoration: solid;
     color: black;   
@@ -32,13 +32,13 @@ a{
 
 #div1{    
     border: 6px solid rgba(100, 100, 100, 1);
-    width: 20.125rem;
-    height: 37.438rem;
+    width: 322px;
+    height: 599px;
     float: left;
     text-align: center;    
-    padding-right: 1.875rem;
-    padding-left: 0.938rem;
-    margin-left: -0.5rem;
+    padding-right: 30px;
+    padding-left: 15px;
+    margin-left: -8px;
     border-radius: 37px;
     background-color: #c7c7c7;
     animation-name: divs;
@@ -50,12 +50,12 @@ a{
 
 #div2{
     border: 6px solid rgba(100, 100, 100, 1);
-    height: 20.125rem;
-    width: 37.438rem;
+    height: 599px;
+    width: 322px;
     float: left;
     text-align: center;
-    padding-right: 2.188rem;
-    padding-left: 0.313rem;
+    padding-right: 35px;
+    padding-left: 5px;
     border-radius: 37px;
     background-color: #c7c7c7;
     animation-name: divs;
@@ -65,12 +65,12 @@ a{
 
 #div3{
     border: 6px solid rgba(100, 100, 100, 1);
-    height: 20.125rem;
-    width: 37.438rem;
+    width: 322px;
+    height: 599px;
     float: left;
     text-align: center;
-    padding-right: 3.125rem;
-    padding-left: 0.313rem;
+    padding-right: 50px;
+    padding-left: 5px;
     border-radius: 37px;
     background-color: #c7c7c7;
     animation-name: divs;
@@ -80,12 +80,12 @@ a{
 
 #div4{
     border: 6px solid rgba(100, 100, 100, 1);
-    height: 20.125rem;
-    width: 37.438rem;
+    width: 322px;
+    height: 599px;
     float: left;
     text-align: center;
-    padding-right: 3.125rem;
-    padding-left: 0.313rem;  
+    padding-right: 50px;
+    padding-left: 5px;  
     border-radius: 37px;
     background-color: #c7c7c7;
     animation-name: divs;
@@ -97,7 +97,7 @@ a{
 .divBotao{
     cursor: pointer; 
     border:3px solid rgba(100, 100, 100, 1); 
-    padding: 0.688rem 1.313rem; 
+    padding: 11px 21px; 
     vertical-align: middle; 
     background:#c7c7c7;
     color:black;
@@ -110,11 +110,11 @@ a{
 
 .divBotao1{
     cursor: pointer; 
-    margin-left: 15.625rem;
+    margin-left: 250px;
     border:3px solid rgba(100, 100, 100, 1);
-    padding: 0.688rem 1.313rem; 
-    vertical-align: middle;
-    background: #c7c7c7;
+    padding: 11px 21px; 
+    vertical-align: middle; 
+    background: #c7c7c7; 
     color:black;
     border-radius:10px; 
     font-size: 20px; 
@@ -142,11 +142,12 @@ a{
   box-shadow: 0 5px #666;
 }
 
-.button {    
+.button {
+    
     margin-left: 84%;
     margin-top: 2%;
     position: absolute;
-    padding: 0.625rem 0.938rem;
+    padding: 10px 15px;
     font-size: 15px;
     cursor: pointer;
     text-align: center;
@@ -171,7 +172,7 @@ a{
     margin-left: 90%;
     margin-top: 2%;
     position: absolute;
-    padding: 0.625rem 0.938rem;
+    padding: 10px 15px;
     font-size: 15px;
     cursor: pointer;
     text-align: center;
@@ -194,8 +195,8 @@ a{
 
   .button3{
     background-color: rgb(112, 167, 31);
-    padding: 1.25rem;
-    margin-left: 7.5rem;
+    padding: 20px;
+    margin-left: 120px;
     border-radius: 10px;
     display: block;
     cursor: pointer;
@@ -211,8 +212,8 @@ a{
 
   #botaoAdd{
     display: none;
-    margin-left: 12.5rem;
-    margin-top: -2.625rem;
+    margin-left: 200px;
+    margin-top: -42px;
     cursor: pointer;
     background-color: rgb(112, 167, 31);
     padding: 5px;
@@ -226,24 +227,24 @@ body{
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 18.75rem;
-    right: 0.938rem;
+    bottom: 300px;
+    right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 9;
   }
   
   /* Add styles to the form container */
   .form-container {
-    max-width: 18.75rem;
-    padding: 0.625rem;
+    max-width: 300px;
+    padding: 10px;
     background-color: white;
   }
   
   /* Full-width input fields */
   .form-container input[type=text], .form-container input[type=password] {
     width: 100%;
-    padding-top: 1.25rem;
-    margin: 0.313rem 0 1.375rem 0;
+    padding-top: 20px;
+    margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
   }
@@ -258,11 +259,11 @@ body{
   .form-container .btn {
     background-color: #04AA6D;
     color: white;
-    padding: 1rem 1.25rem;
+    padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-bottom:0.625rem;
+    margin-bottom:10px;
     opacity: 0.8;
   }
   
@@ -277,8 +278,8 @@ body{
   }
 
 .container{
-  border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
-  height: 38.125rem;
+  border-radius: 40px 40px 40px 40px;
+  height: 610px;
   position: absolute;
   background-color: rgba(100, 100, 100, 1);
 }
@@ -302,7 +303,7 @@ p, h2, h3, ul, li{
   }
   to{
     margin-left: 0%;
-    width: 20.125rem;
+    width: 322px;
   }
 }
 
@@ -311,6 +312,6 @@ p, h2, h3, ul, li{
     height: 0px;
   }
   to{
-    height: 37.438rem;
+    height: 599px;
   }
 }
