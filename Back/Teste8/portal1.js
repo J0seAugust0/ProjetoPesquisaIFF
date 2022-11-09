@@ -82,7 +82,7 @@ window.onload = function(){
 	var logado = document.getElementById("LoginFeito").value
     //var logado = "Sim";
 	if(logado === "Sim"){
-		document.getElementById("botao1").innerHTML = "<h3 style='position: absolute; margin-top: 2.5%; width: 88%; text-align: right;'> Bem vindo " + document.getElementById("nome").value + "</h3>"
+		document.getElementById("botao1").innerHTML = "<h4 style='position: absolute;font-size: 18px; margin-top: 2.5%; width: 88%; text-align: right;'> Bem vindo " + document.getElementById("nome").value + "</h4>"
 		document.getElementById("botao2").innerHTML = "<a href='sair.php'><button class='button2'>Sair</button></a>"
         document.getElementById("botaoAdd").style.display = "block";
 	}
