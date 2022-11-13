@@ -44,7 +44,8 @@
       animation-duration: 2s;
       transition: 2s ease;
       margin-left: 1.3%;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
   }
   
   
@@ -62,7 +63,8 @@
       animation-duration: 2s;
       transition: 2s ease;
       margin-left: 5%;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
   }
   
   #div3{
@@ -79,7 +81,8 @@
       animation-duration: 2s;
       transition: 2s ease;
       margin-left: 5%;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
   }
   
   .divBotao{
