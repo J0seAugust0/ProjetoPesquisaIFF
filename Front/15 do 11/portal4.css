@@ -75,6 +75,28 @@
     #link{
       margin-right: 290px;
     }
+
+    #botaoFerramenta{
+      display: inline-block;
+      margin-top: -43px;
+      margin-left: 120px;
+      position: absolute;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    #mostrarFerramenta{
+      margin-top: -78px;
+      margin-left: 530px;
+      position: absolute;
+      width: 320px;
+      height: 600px;
+      border: 10px groove rgba(100, 100, 100, 1);
+      border-radius: 15px;
+      background-color: #c7c7c7;
+      display: none;
+      overflow: auto;
+    }
   
   .fundo{
       background-color: white;
