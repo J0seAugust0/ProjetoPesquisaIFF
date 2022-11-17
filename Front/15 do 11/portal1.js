@@ -108,3 +108,16 @@ function MostrarArq(){
     }
     
 }
+
+function MostrarFerramenta(){
+
+    if(document.getElementById("mostrarFerramenta").style.display === "block"){
+        document.getElementById("mostrarFerramenta").style.display = "none";
+        document.getElementById("botaoFerramenta").textContent = "Mostrar Ferramentas"
+        
+    } else {
+        document.getElementById("mostrarFerramenta").style.display = "block";
+        document.getElementById("botaoFerramenta").textContent = "Esconder Ferramentas"
+    }
+    
+}
