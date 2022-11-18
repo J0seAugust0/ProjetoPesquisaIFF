@@ -33,37 +33,46 @@
         <br><br><br><br><br><br><br><br>      
         <div>
         <form method="get">
-            <button class="divBotao1" type="submit" name="tipo" value="1" onclick="mostrarTopico(1);">
+            <button class="divBotao1" type="submit" name="tipo" value="1">
                 Levantamento de Requisitos
             </button>
-            <button class="divBotao" type="submit" name="tipo" value="2" onclick="mostrarTopico(2);">
+            <button class="divBotao" type="submit" name="tipo" value="2">
                 Análise de Requisitos
             </button>   
-            <button class="divBotao" type="submit" name="tipo" value=3 onclick="mostrarTopico(3);">
+            <button class="divBotao" type="submit" name="tipo" value="3">
                 Implementação
             </button>
-            <button class="divBotao" type="submit" name="tipo" value=4 onclick="mostrarTopico(4)">
+            <button class="divBotao" type="submit" name="tipo" value="4">
                 Teste
             </button>
-            <button class="divBotao" type="submit" name="tipo" value=5 onclick="mostrarTopico(5)">
+            <button class="divBotao" type="submit" name="tipo" value="5">
                 Manutenção
             </button>                    
         </form>
         <button class="divBotao2" type="button"><a style="text-decoration: none; color: rgb(0, 146, 12); padding: 15px 15px 20px 15px ;" href="criarProjeto.html">Criar Projeto</a></button>
         </div>
-        <script>
-            window.addEventListener('load', function () {
-                if (window.history.replaceState) {
-                    window.history.replaceState( null, null, window.location.href );
-                }
-            });
-        </script>
         <br><br>
         <div class="container">
             <div id="div1">
                 <div><h2>Para que serve?</h2><hr></div>
                 <br>
-               <p id="pDivs"> O Levantamento de Requisitos serve para...</p>
+                <?php
+                echo '<p id="pDivs">';
+                    if(!isset($_GET['tipo'])){
+                        echo 'O Levantamento de Requisitos serve para...';
+                    }elseif($_GET['tipo']==1){
+                        echo 'O Levantamento de Requisitos serve para...';
+                    }elseif($_GET['tipo']==2){
+                        echo 'A Análise de Requisitos serve para...';
+                    }elseif($_GET['tipo']==3){
+                        echo 'A etapa de Implementação é importante para...';
+                    }elseif($_GET['tipo']==4){
+                        echo 'A Realização de Testes serve para...';
+                    }elseif($_GET['tipo']==5){
+                        echo 'A Realização de manutenção serve para...';
+                    }
+                    echo '</p>';
+                ?>
             </div>
             <div id="div2">
                 <div>
