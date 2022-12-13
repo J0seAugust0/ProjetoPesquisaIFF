@@ -39,27 +39,17 @@ function baixarPDF(){
     var texto3 = document.getElementById("tres").value;
     var texto4 = document.getElementById("quatro").value;
 
-    var textoConcatenado = texto1 + '\n' + texto2 + '\n' + texto3 + '\n' + texto4;
-    var textoConcatenado2 = texto3 + '\n' + texto4;
+    var textoConcatenado = texto1 + "<br>" + "<br>" + texto2 + "<br>"+ "<br>" + texto3 + "<br>" + "<br>" + texto4;
+    var text = textoConcatenado.split(/\r?\n/);
+    var str = text.join('</br>'); 
 
-   
-}
-
-function creaPdf() {
-  
-  var texto1 = document.getElementById("um").value;
-  var texto2 = document.getElementById("dois").value;
-  var texto3 = document.getElementById("tres").value;
-  var texto4 = document.getElementById("quatro").value;
-
-  var textoConcatenado = texto1 + '\n' + texto2 + '\n' + texto3 + '\n' + texto4;    
-
-  var opt = {
-    margin: 1,
-    filename: "myfile.pdf",
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
-  };
-
-  html2pdf().set(opt).from(texto1, texto2, texto3, texto4).save();
+    document.getElementById("gambi").innerHTML = str;
+    let element = document.getElementById('gambi')
+    html2pdf(element, {
+      margin: 10,
+      filename: 'EngSoft.pdf',
+      fontsize: 30,
+      html2canvas: {scale: 2, logging: true, dpi: 192, letterRendering: true},
+      jsPDF: {unit: 'mm', format: 'a4', orientation: 'portrait'}
+    }); 
 }
